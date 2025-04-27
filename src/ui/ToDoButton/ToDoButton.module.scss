@@ -1,0 +1,6 @@
+@use "../../styles/mixins/media";
+
+.button {
+  @include media.mobile {
+  }
+}

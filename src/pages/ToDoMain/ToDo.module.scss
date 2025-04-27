@@ -1,0 +1,62 @@
+@use "../../styles/mixins/media";
+
+.wrapper {
+  padding-top: 150px;
+
+  @include media.tablet {
+    padding-top: 3rem;
+  }
+
+  @include media.mobile {
+    padding-top: 3rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 500px;
+  padding: 20px 20px 0;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+
+  @include media.tablet {
+    max-width: unset;
+    box-shadow: unset;
+    height: auto;
+  }
+
+  @include media.mobile {
+    max-width: unset;
+    box-shadow: unset;
+    height: auto;
+  }
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+}
+
+.createToDo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  width: 100%;
+
+  .input {
+    padding: 0.6rem 10px;
+    border-radius: var(--border-radius);
+    border: var(--input-border);
+    background-color: var(--color-background-secondary);
+    color: inherit;
+  }
+
+  @include media.mobile {
+    grid-template-columns: none;
+    gap: 5px;
+  }
+}

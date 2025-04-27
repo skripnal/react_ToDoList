@@ -1,0 +1,20 @@
+:root {
+  --color-text: #ffffffde;
+  --color-background: #242424;
+  --color-background-secondary: #1a1a1a;
+  --hover-color-background: #272727;
+  --input-border: 1px solid rgba(0, 0, 0, 0.3);
+  --box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  --border-radius: 8px;
+  --border-color-button: #646cff;
+  --color-scrollbar-background: #1a1a1a;
+}
+
+.light {
+  --color-text: #213547;
+  --color-background: #ffffff;
+  --color-background-secondary: #eaeaea;
+  --hover-color-background: #fbfbfb;
+  --input-border: 1px solid rgba(0, 0, 0, 0.3);
+  --color-scrollbar-background: #f1f1f1;
+}
